@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "sqlite": { "command": "sqlite", "args": ["--db", "claude.db"] },
+    "filesystem": { "command": "fs" },
+    "notion": { "command": "notion" }
+  }
+}
