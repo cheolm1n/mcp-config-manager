@@ -1,0 +1,71 @@
+{
+  "name": "mcp-config-manager",
+  "version": "1.0.0",
+  "description": "Desktop app to manage Claude MCP settings",
+  "main": "src/main/index.ts",
+  "scripts": {
+    "dev": "electron-forge start",
+    "build": "electron-vite build",
+    "package:win": "electron-builder --win",
+    "package:mac": "electron-builder --mac",
+    "package:linux": "electron-builder --linux",
+    "test": "jest",
+    "test:e2e": "playwright test"
+  },
+  "build": {
+    "appId": "com.example.mcpconfig",
+    "productName": "MCP Config Manager",
+    "files": [
+      "dist/**/*"
+    ],
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        "portable"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "dir"
+      ],
+      "sign": true
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.7.0",
+    "@electron-forge/maker-deb": "^7.7.0",
+    "@electron-forge/maker-rpm": "^7.7.0",
+    "@electron-forge/maker-squirrel": "^7.7.0",
+    "@electron-forge/maker-zip": "^7.7.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.5.0",
+    "electron": "^26.2.0",
+    "electron-builder": "^24.6.0",
+    "electron-vite": "^1.1.0",
+    "jest": "^29.5.0",
+    "playwright": "^1.32.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.0",
+    "vue-tsc": "^1.2.0",
+    "vue": "^3.3.4",
+    "vue-loader": "^17.0.1",
+    "pinia": "^2.0.28"
+  },
+  "dependencies": {
+    "winston": "^3.9.0",
+    "zod": "^3.22.2"
+  }
+}
