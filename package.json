@@ -1,0 +1,57 @@
+{
+  "name": "mcp-config-manager",
+  "version": "1.0.0",
+  "description": "Desktop app to manage Claude MCP settings",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "electron-forge start",
+    "build": "electron-vite build",
+    "package:win": "electron-builder --win",
+    "package:mac": "electron-builder --mac",
+    "package:linux": "electron-builder --linux",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^23.6.0",
+    "electron-vite": "^2.0.0",
+    "electron-forge": "^6.1.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.3.0",
+    "pinia": "^2.1.0",
+    "jest": "^29.0.0",
+    "spectron": "^15.0.0"
+  },
+  "dependencies": {
+    "winston": "^3.8.1"
+  },
+  "build": {
+    "appId": "com.example.mcpconfigmanager",
+    "asar": true,
+    "files": [
+      "dist/**/*"
+    ],
+    "extraFiles": [],
+    "mac": {
+      "target": ["dmg", "zip"],
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "maintainer": "mcp",
+      "category": "Utility"
+    }
+  }
+}
