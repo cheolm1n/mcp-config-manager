@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "MCP Alpha",
+    "description": "Alpha module",
+    "version": "1.0.0",
+    "enabled": true
+  },
+  {
+    "id": "2",
+    "name": "MCP Beta",
+    "description": "Beta module",
+    "version": "1.0.0",
+    "enabled": false
+  },
+  {
+    "id": "3",
+    "name": "MCP Gamma",
+    "description": "Gamma module",
+    "version": "1.0.0",
+    "enabled": true
+  },
+  {
+    "id": "4",
+    "name": "MCP Delta",
+    "description": "Delta module",
+    "version": "1.0.0",
+    "enabled": false
+  },
+  {
+    "id": "5",
+    "name": "MCP Epsilon",
+    "description": "Epsilon module",
+    "version": "1.0.0",
+  "enabled": true
+  }
+]
+
