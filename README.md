@@ -1,2 +1,10 @@
 # mcp-config-manager
-mcp 설정을 돕는 데스크톱 앱 입니다.
+
+Electron 36 + Vue 3 기반 MCP 설정 관리자.
+
+```bash
+pnpm install
+pnpm dev        # 개발 모드
+pnpm build      # 패키징 (electron-builder)
+```
+// --- End of README.md
