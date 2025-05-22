@@ -1,0 +1,28 @@
+{
+  "name": "mcp-config-manager",
+  "version": "1.0.0",
+  "description": "MCP Configuration Manager",
+  "main": "main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build && electron-builder",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "electron": "^36.2.1",
+    "vue": "^3.4.0",
+    "element-plus": "^2.7.0",
+    "pinia": "^2.1.0"
+  },
+  "devDependencies": {
+    "@electron-vite/eslint-config-vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.1.6"
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "mcp-001",
+    "name": "Alpha Module",
+    "description": "Core processing unit for advanced calculations.",
+    "version": "1.2.3",
+    "enabled": true
+  },
+  {
+    "id": "mcp-002",
+    "name": "Bravo Interface",
+    "description": "User interaction and data display services.",
+    "version": "2.1.0",
+    "enabled": true
+  },
+  {
+    "id": "mcp-003",
+    "name": "Charlie DataLink",
+    "description": "Network communication and data synchronization.",
+    "version": "1.0.5",
+    "enabled": false
+  },
+  {
+    "id": "mcp-004",
+    "name": "Delta Storage",
+    "description": "Long-term data persistence and archiving.",
+    "version": "3.0.0",
+    "enabled": true
+  },
+  {
+    "id": "mcp-005",
+    "name": "Echo Analytics",
+    "description": "Data analysis and reporting engine.",
+    "version": "1.1.2",
+    "enabled": false
+  },
+  {
+    "id": "mcp-006",
+    "name": "Foxtrot Security",
+    "description": "Security protocols and access control.",
+    "version": "2.2.1",
+    "enabled": true
+  }
+]
+// --- End of resources/sample-mcp.json
