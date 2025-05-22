@@ -4,7 +4,7 @@
   "description": "MCP Configuration Manager",
   "main": "main/main.js",
   "scripts": {
-    "dev": "electron-vite dev",
+    "dev": "electron-vite dev -w",
     "build": "electron-vite build && electron-builder",
     "lint": "eslint .",
     "format": "prettier --write ."
